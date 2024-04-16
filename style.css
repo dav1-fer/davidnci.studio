@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Schoolbell&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #151515;
+    color: #fff;
+    font-family: "Pangolin",sans-serif;
+    font-size: 22px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container-logo{
+    margin-right: auto;
+}
+.logo{
+    max-width: 90px;
+    cursor: pointer;
+    padding: 24px;
+}
+.nav-links{
+   list-style: none;
+   padding-right: 24px;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+main h1{
+    font-size: 120px;
+    margin-top: 48px;
+}
+main h4{    
+    padding: 10px;
+    margin-top: 24px;
+    font-size: 28px;
+}
+button{
+    font-family: "Pangolin", sans-serif;
+    font-size: 28px;
+    margin-top: 40px;
+    padding: 24px 48px;
+    background-color: #fff;
+    border-radius: 80px;
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: #000;
+}
