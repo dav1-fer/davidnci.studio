@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@font-face {
+    font-family: "New York";
+    src: url(assets/fonts/NewYorkFont.otf);
+}
+ /* Importing fonts above comment*/
 
 *{
     margin: 0;
@@ -8,38 +13,47 @@
 body{
     background-color: #151515;
     color: #fff;
-    font-family: "Pangolin",sans-serif;
+    font-family: "Newsreader",sans-serif;
     font-size: 20px;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    background-color: #151515;
 }
 .container-logo{
     margin-right: auto;
 }
 .logo{
+    position: relative;
     max-width: 250px;
     cursor: pointer;
-    padding: 24px;
+    padding: 0 24px;
 }
 .nav-links{
-   list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    padding-right: 24px;
 }
 .nav-links li{
-    display: inline-block;
+    position: relative;
+    list-style: none;
+    font-weight: 600 ;
     padding: 0px 20px;
 }
 .nav-links li a{
-    text-decoration: none;
     color: #FFDDB7;
+    text-decoration: none;
 }
 .nav-links li a:hover{
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 main{
@@ -50,41 +64,38 @@ main{
     text-align: center;
 }
 main h1{
-    font-size: 120px;
-    margin-top: 48px;
+    font-family: "New York";
+    font-size: 110px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 80px;
 }
-main h4{    
-    padding: 10px;
-    margin-top: 24px;
+main h3{    
     font-size: 28px;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 36px;
 }
 .btn-secondary{
-    font-family: "Pangolin", sans-serif;
-    font-size: 28px;
-    margin-top: 40px;
-    padding: 24px 48px;
     background-color: #fff;
+    font-family: "New York", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
     border: none;
+    padding: 24px 48px;
+    margin: 30px
 }
 .btn-primary{
-    font-family: "Pangolin", sans-serif;
-    font-size: 28px;
-    margin-top: 40px;
-    padding: 24px 48px;
     background-color: #FFDDB7;
+    font-family: "New York", sans-serif;
+    font-size: 32px;
     border: none;
+    padding: 24px 48px;
+    margin-top: 40px;
 }
 button a{
     text-decoration: none;
     color: #000;
-}
-btn-secondary:hover{
-    font-family: "Pangolin", sans-serif;
-    font-size: 28px;
-    margin-top: 40px;
-    padding: 24px 48px;
-    background-color: #ffddb7;
-    border: none;
 }
 .about-section{
     display: flex;
@@ -92,22 +103,24 @@ btn-secondary:hover{
     justify-content: center;
     align-items: center;
 }
-.about-section h1{
+.about-section h2{
+    font-family: "New York";
     font-size: 62px;
-    margin-top: 40px;
-    margin-bottom: 16px;
-}
-.about-section p{
-    width: 864px;
-    font-size: 24px;
-    text-align: center;
-    padding-bottom: 40px;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px #fff;
 }
 .img-test{
     background-color: #FFDDB7;
-    width: 1464px;
-    height: 573px;
-    margin-bottom: 36px;
+    width: 1264px;
+    height: 473px;
+    margin-top: 24px;
+}
+.about-section p{
+    width: 764px;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 36px;
 }
 .projects-section{
     display: flex;
@@ -119,17 +132,37 @@ btn-secondary:hover{
     width: 100%;
     height: 950px;
 }
-.projects-section h1{
+.projects-section h2{
+    font-family: "New York";
     font-size: 62px;
-    margin-top: 220px;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px #fff;
+    margin-top: 60px;
     margin-bottom: 16px;
 }
 .card-container{
     display: flex;
-    gap: 32px;
+    gap: 48px;
 }
 .card{
     width: 427px;
-    height: 567px;
+    height: 467px;
     background-color: #FFDDB7;
 }
+
+
+
+
+
+/* Custom Scrollbar below */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fcc586;
+}
+
