@@ -1,5 +1,4 @@
-/* Importing typefaces from Google Fonts and Local Fonts above this comment*/
-
+/* importing typefaces from Google Fonts and Local Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 @font-face {
     font-family: "New York";
@@ -19,6 +18,8 @@ body{
     font-size: 18px;
 }
 
+
+/* header contains the navigation */
 header{
     position: fixed;
     top: 0;
@@ -74,6 +75,8 @@ header{
     width: 100%;
 }
 
+
+/* main contains the hero section */
 main{
     width: 100%;
     height: 600px;
@@ -91,8 +94,25 @@ main h1{
 main h2{    
     font-size: 28px;
     font-weight: 400;
+    line-height: 120%;
     padding: 10px;
     margin-top: 16px;
+}
+
+
+/* buttons styling & hover transitions */
+.btn-primary{
+    background-color: #FFDDB7;
+    font-family: "New York", sans-serif;
+    font-size: 32px;
+    border: none;
+    padding: 24px 48px;
+    margin-top: 40px;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #FFDDB7;
+    scale: 1.02;
 }
 .btn-secondary{
     background-color: #fff;
@@ -108,48 +128,49 @@ main h2{
     color: #fff;
     scale: 1.02;
 }
-.btn-primary{
-    background-color: #FFDDB7;
-    font-family: "New York", sans-serif;
-    font-size: 32px;
-    border: none;
-    padding: 24px 48px;
-    margin-top: 40px;
-}
-.btn-primary:hover{
-    background-color: #fff;
-    color: #FFDDB7;
-    scale: 1.02;
-}
 button a{
     text-decoration: none;
     color: #000;
 }
+
+
+/* about section */
 #about-section{
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 64px;
 }
 #about-section h2{
     font-family: "New York";
     font-size: 48px;
     font-weight: 500;
     -webkit-text-stroke: 1.5px #fff;
+    margin-bottom: 24px;
 }
-.img-test{
-    background-color: #FFDDB7;
-    width: 1040px;
-    height: 384px;
-    margin-top: 24px;
+#about-section figure{
+    display: flex;
+    justify-content: center;
+    width: 1200px ;
+    height: 400px ;
+    
 }
-#about-section p{
-    width: 764px;
+#about-section figure img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+#about-section figcaption p{
+    width: 704px;
     font-size: 22px;
+    line-height: 120%;
+    margin: 24px 36px;
     text-align: center;
-    margin-top: 36px;
 }
+
+/* case studies section */
 #projects-section{
     display: flex;
     flex-direction: column;
@@ -169,13 +190,15 @@ button a{
 }
 .card-container{
     display: flex;
-    gap: 48px;
+    gap: 80px;
 }
 .card{
     width: 360px;
     height: 394px;
     background-color: #FFDDB7;
 }
+
+/* contacts section */
 #contacts-section{
     display: flex;
     justify-content: space-around;
@@ -191,6 +214,9 @@ button a{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+
+/* forms for contacting via email */
 form{
     margin-top: 48px;
 }
@@ -231,6 +257,9 @@ form button:hover{
     background-color: #FFDDB7;
     scale: 1.02;
 }
+
+
+/* footer */
 footer{
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     padding: 24px 62px;
@@ -246,9 +275,7 @@ footer p{
 
 
 
-
-/* Custom Scrollbar below */
-
+/* custom scrollbar below */
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -257,4 +284,108 @@ footer p{
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FFDDB7;
+}
+
+
+/* hero section keyframes animation below */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate > * {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* delay between the elements */
+.animate > *:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animate > *:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.animate > *:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+/* onScroll custom animations below */
+section .animate{
+    transition: 1.7s;
+}
+
+/* animation initial state */
+.sec-2 .animate {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* animation final state */
+.sec-2.show-animate .animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* delay for figure */
+.sec-2.show-animate figure.animate {
+    transition-delay: 0.2s;
+}
+
+/* delay for figcaption */
+.sec-2.show-animate figcaption.animate {
+    transition-delay: 0.6s;
+}
+
+
+/* images of section "case studies" slide animation */
+.sec-3 img.animate {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+/* third image with no delay */
+.sec-3.show-animate img.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* delay for the second image */
+.sec-3.show-animate img.animate:nth-of-type(2) {
+    transition-delay: 0.2s;
+}
+/* delay for the first image */
+.sec-3.show-animate img.animate:nth-of-type(1) {
+    transition-delay: 0.4s;
+}
+
+/* "contact section" slide animation */
+.sec-4 .animate {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Delay for aside */
+.sec-4.show-animate aside.animate {
+    transition-delay: 0.2s;
+}
+
+/* Delay for form */
+.sec-4.show-animate form.animate {
+    transition-delay: 0.4s;
+}
+
+/* animation final state */
+.sec-4.show-animate .animate {
+    transform: translateX(0);
+    opacity: 1;
 }

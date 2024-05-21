@@ -18,3 +18,20 @@ body{
     font-family: "Newsreader",sans-serif;
     font-size: 18px;
 }
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    z-index: 100;
+}
+header h4{
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 32px 0px;
+    cursor: default;
+}

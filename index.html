@@ -22,38 +22,42 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="sec-1 animate">
         <h1>David Fernandes<br>digital Designer</h1>
         <h2>A Genius Individual looking to create<br>Impactful, Effective and Beautiful Design</h3>
         <button class="btn-primary">
             <a href="#contacts-section">Work with Me</a>
         </button>
     </main>
-    <section id="about-section">
-        <h2>About Me</h2>
-        <div class="img-test"></div>
-        <p>David Fernandes is a Digital Designer based in Portugal.
-        He is an ambitious person looking to provide as much value as he possibly can in this world through the designs and projects he builds.
-        </p>
+    <section id="about-section" class="sec-2">
+        <h2 class="animate">About Me</h2>
+        <figure class="animate">
+            <img  src="assets/images/Me-photo.jpg">
+        </figure>
+        <figcaption class="animate">
+            <p>David Fernandes is a Digital Designer based in Portugal.
+            He is an ambitious person looking to provide as much value as he possibly can in this world through the designs and projects he builds.
+            </p>
+        </figcaption>
     </section>
-    <section id="projects-section">
+    <section id="projects-section" class="sec-3">
         <h2>Case Studies</h2>
         <figure class="card-container">
-            <img class="card" src="assets/projects/typo03.jpg">
-            <img class="card" src="assets/projects/typo02.jpg">
-            <img class="card" src="assets/projects/typo01.jpg">
+            <img class="card animate" src="assets/projects/typo03.jpg" style="--i:0;">
+            <img class="card animate" src="assets/projects/typo02.jpg" style="--i:1;">
+            <img class="card animate" src="assets/projects/typo01.jpg" style="--i:2;">
         </figure>
-        <button class="btn-secondary">
+        <button class="btn-secondary animate">
             <a href="gallery.html">Work Gallery</a>
         </button>
     </section>
-    <section id="contacts-section">
-        <aside>
+    <section id="contacts-section" class="sec-4">
+        <aside class="animate">
             <h2>
                 Let's<br>get in<br>Touch!
             </h2>
         </aside>
-        <form>
+        <form class="animate">
             <label for="name" aria-label="Name input field"></label>
             <input id="name" type="text" placeholder="Your Name" required>
             <label for="email" aria-label="Email input field"></label>
@@ -70,5 +74,6 @@
         <p>CopyRight © All rights reserved to Davidnci Studios</p>
     </footer>
 
+    <script src="script-index.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Importing typefaces from Google Fonts and Local Fonts above this comment*/
+/* importing typefaces from Google Fonts and Local Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 @font-face {
@@ -67,7 +67,7 @@ header h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 64px;
+    padding-top: 54px;
 }
 .projects-slider figure{
     display: flex;
@@ -128,7 +128,7 @@ footer p{
     text-align: center;
 }
 
-/* Custom Scrollbar below */
+/* custom scrollbar below */
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -138,4 +138,42 @@ footer p{
 }
 ::-webkit-scrollbar-thumb{
     background-color: #FFDDB7;
+}
+
+
+/* custom onScroll and keyframe animations below  */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px); /* Move elements up slightly */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+figure.show-animate {
+    opacity: 0; /* Initial state */
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* delay each figure element by 0.2s */
+figure.show-animate{
+    animation-delay: 0.3s;
+}
+
+
+/* Ensure hidden state for figures initially */
+.projects-slider figure {
+    opacity: 0;
+}
+
+/* Apply immediate animation with delay for the first figure */
+.projects-slider figure:first-of-type {
+    animation: fadeInUp 0.3s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0; /* Initial state */
 }
