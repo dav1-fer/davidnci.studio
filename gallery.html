@@ -4,22 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davidnci Studios</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-icon.png">
+    <link rel="stylesheet" href="gallery-style.css">
+    <script src="https://kit.fontawesome.com/1d9d36e9e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a class="container-logo" href="index.html">
             <img class="logo" src="assets/images/logo.png" alt="davidnci.studios logo">
         </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Work Gallery</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+        <h4>Work Gallery</h4>
     </header>
+    <section class="projects-slider">
+        <figure>
+            <a href="project-page.html">
+                <img class="card" src="assets/projects/genesis01.jpg" alt="abstract image of hand coveed with plants reaching for the sky with plants around">
+            </a>
+            <figcaption>
+                <p>Genesis Series</p>
+                <p>2023</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="project-page.html">
+                <img class="card" src="assets/projects/genesis02.jpg" alt="God reaching his finger for a hand holding a branch">
+            </a>
+            <figcaption>
+                <p>Genesis Series</p>
+                <p>2023</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="project-page.html">
+                <img class="card" src="assets/projects/genesis03.jpg" alt="God holding the universe in his hands with person floating in it's direction">
+            </a>
+            <figcaption>
+                <p>Genesis Series</p>
+                <p>2023</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="project-page.html">
+                <img class="card" src="assets/projects/exodus01.jpg" alt="A desert ambience with God hands holding a Piramide">
+            </a>
+            <figcaption>
+                <p>Exodus Series</p>
+                <p>2023</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="project-page.html">
+                <img class="card" src="assets/projects/typo03.jpg" alt="number 1 with definition on the top right and grainy texture overlay">
+            </a>
+        <figcaption>
+            <p>Typo Series</p>
+            <p>2022</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href="project-page.html">
+            <img class="card" src="assets/projects/typo02.jpg">
+        </a>
+    <figcaption>
+        <p>Typo Series</p>
+        <p>2022</p>
+    </figcaption>
+</figure>
+<figure>
+    <a href="project-page.html">
+        <img class="card" src="assets/projects/typo01.jpg">
+    </a>
+<figcaption>
+    <p>Typo Series</p>
+    <p>2022</p>
+</figcaption>
+</figure>
+    </section>
+    <button id="top-button">
+        <a href="#">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>   
+    </button>
+    <footer>
+        <img src="assets/images/logo-icon.png" alt="logo icon">
+        <p>CopyRight © All rights reserved to Davidnci Studios</p>
+    </footer>
+
+    <!-- Tilt Effect Script and Settings -->
+    <script type="text/javascript" src="assets/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
 </body>
 </html>

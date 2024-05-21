@@ -6,49 +6,69 @@
     <title>Davidnci Studios</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo-icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d9d36e9e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a class="container-logo" href="#">
-            <img class="logo" src="assets/images/logo.png" alt="davidnci.studios logo">
+            <img class="logo" src="assets/images/logo.png" alt="davidnci studios logo">
         </a>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Work Gallery</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#projects-section">Case Studies</a></li>
+                <li><a href="gallery.html">Work Gallery</a></li>
+                <li><a href="#contacts-section">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>David Fernandes<br>digital Designer</h1>
-        <h3>A Genius individual looking to Create<br>impactful, effective and beautiful design</h3>
-        <button class="btn-secondary">
-            <a href="#">Gallery of Work</a>
-        </button>
+        <h2>A Genius Individual looking to create<br>Impactful, Effective and Beautiful Design</h3>
         <button class="btn-primary">
-            <a href="#">Work with Me</a>
+            <a href="#contacts-section">Work with Me</a>
         </button>
     </main>
-    <section class="about-section">
+    <section id="about-section">
         <h2>About Me</h2>
         <div class="img-test"></div>
         <p>David Fernandes is a Digital Designer based in Portugal.
         He is an ambitious person looking to provide as much value as he possibly can in this world through the designs and projects he builds.
         </p>
     </section>
-    <section class="projects-section">
+    <section id="projects-section">
         <h2>Case Studies</h2>
         <figure class="card-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <img class="card" src="assets/projects/typo03.jpg">
+            <img class="card" src="assets/projects/typo02.jpg">
+            <img class="card" src="assets/projects/typo01.jpg">
         </figure>
         <button class="btn-secondary">
-            <a href="gallery.html">See more Projects</a>
+            <a href="gallery.html">Work Gallery</a>
         </button>
     </section>
+    <section id="contacts-section">
+        <aside>
+            <h2>
+                Let's<br>get in<br>Touch!
+            </h2>
+        </aside>
+        <form>
+            <label for="name" aria-label="Name input field"></label>
+            <input id="name" type="text" placeholder="Your Name" required>
+            <label for="email" aria-label="Email input field"></label>
+            <input id="email" type="email" placeholder="Email" required>
+            <label for="message" aria-label="Message input field"></label>
+            <textarea id="message" rows="5" placeholder="How can I help you?"></textarea>
+            <button aria-label="Submit email" type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+    </section>
+    <footer>
+        <img src="assets/images/logo-icon.png" alt="logo icon">
+        <p>CopyRight © All rights reserved to Davidnci Studios</p>
+    </footer>
+
 </body>
 </html>

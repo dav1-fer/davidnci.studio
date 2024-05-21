@@ -1,0 +1,141 @@
+/* Importing typefaces from Google Fonts and Local Fonts above this comment*/
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@font-face {
+    font-family: "New York";
+    src: url(assets/fonts/NewYorkFont.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #151515;
+    color: #fff;
+    font-family: "Newsreader",sans-serif;
+    font-size: 18px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    z-index: 100;
+}
+header h4{
+    font-size: 42px;
+    font-weight: 500;
+    margin: 14px 40px;
+    cursor: default;
+}
+.container-logo{
+    margin-right: auto;
+}
+.logo{
+    position: relative;
+    max-width: 220px;
+    cursor: pointer;
+    padding: 0 24px;
+}
+.nav-links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-right: 24px;
+}
+.nav-links li{
+    position: relative;
+    list-style: none;
+    font-weight: 600 ;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    position: relative;                 
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.projects-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+}
+.projects-slider figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px;
+}
+.projects-slider figure .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.projects-slider figure a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-slider figure figcaption{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.projects-slider figure p{
+    margin-top: 24px;
+    justify-content: flex-start;
+}
+#top-button{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    cursor: pointer;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+#top-button a{
+    color: #151515;
+    text-decoration: none;
+}
+footer{
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 24px 62px;
+    margin-top: 32px;
+}
+
+footer img{
+    width: 40px;
+}
+footer p{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Custom Scrollbar below */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FFDDB7;
+}
