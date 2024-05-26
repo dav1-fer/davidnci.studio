@@ -177,3 +177,36 @@ figure.show-animate{
     animation-delay: 0.2s;
     opacity: 0; /* Initial state */
 }
+
+
+/* media query for large mobile devices */
+
+@media only screen and (max-width: 768px) {
+    header h4 {
+        font-size: 24px;
+        margin: 14px 20px;
+    }
+
+    .projects-slider figure {
+        margin: 16px;
+    }
+
+    .projects-slider figure .card {
+        width: 80%;
+    }
+}
+
+/* media query for extra small devices */
+@media only screen and (max-width: 480px) {
+    header h4 {
+        font-size: 20px;
+    }
+
+    .projects-slider figure {
+        margin: 12px;
+    }
+
+    .projects-slider figure .card {
+        width: 90%;
+    }
+}

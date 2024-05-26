@@ -1,0 +1,137 @@
+/* Importing typefaces from Google Fonts and Local Fonts above this comment*/
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@font-face {
+    font-family: "New York";
+    src: url(assets/fonts/NewYorkFont.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #151515;
+    color: #fff;
+    font-family: "Newsreader",sans-serif;
+    font-size: 18px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    z-index: 100;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+header button {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.nav-line{
+    width: 350px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 16px;
+}
+header h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+.project-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-info img{
+    width: 600px;
+    margin: 30px;
+}
+.project-info aside{
+    width: 550px;
+    line-height: 150%;
+}
+
+/* footer */
+footer{
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 24px 62px;
+    margin-top: 40px;
+}
+
+footer img{
+    width: 40px;
+}
+footer p{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* custom scrollbar below */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FFDDB7;
+}
+
+
+/* media query for small devices */
+@media only screen and (max-width: 1064px) {
+    header h4 {
+        font-size: 20px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .project-info img {
+        width: 90%;
+        margin-bottom: 24px;
+    }
+
+    .project-info aside {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .project-info aside p {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+}
+
+/* media query for extra small devices */
+@media only screen and (max-width: 480px) {
+    header h4 {
+        font-size: 18px;
+    }
+
+    .project-info aside p {
+        width: calc(100% - 20px);
+    }
+}

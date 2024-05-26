@@ -16,6 +16,7 @@ body{
     color: #fff;
     font-family: "Newsreader",sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 
@@ -388,4 +389,119 @@ section .animate{
 .sec-4.show-animate .animate {
     transform: translateX(0);
     opacity: 1;
+}
+
+
+/* media query for large mobile devices */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .nav-links {
+        padding-right: 0;
+    }
+    .logo {
+        max-width: 180px;
+        padding: 0 12px;
+    }
+    .nav-links li {
+        padding: 0px 10px;
+    }
+    main {
+        height: auto;
+    }
+    main h1 {
+        font-size: 60px;
+        margin-top: 100px;
+    }
+    main h2 {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 24px;
+        padding: 16px 32px;
+    }
+
+    #about-section figure {
+        width: 80%;
+    }
+
+    #about-section figcaption p {
+        width: 90%;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #contacts-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    #contacts-section aside,
+    #contacts-section form {
+        width: 80%;
+    }
+
+    #contacts-section h2 {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    form button {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+/* media query for extra small devices */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    main h1 {
+        font-size: 40px;
+        margin-top: 80px;
+    }
+
+    main h2 {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+
+    #contacts-section h2 {
+        font-size: 40px;
+        margin-top: 60px;
+
+    form button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+}
 }
