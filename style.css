@@ -80,7 +80,7 @@ header{
 /* main contains the hero section */
 main{
     width: 100%;
-    height: 600px;
+    height: auto;
     display: block;
     justify-content: center;
     text-align: center;
@@ -112,8 +112,9 @@ main h2{
 }
 .btn-primary:hover{
     background-color: #fff;
-    color: #FFDDB7;
+    color: #000;
     scale: 1.02;
+    cursor: pointer;
 }
 .btn-secondary{
     background-color: #fff;
@@ -126,10 +127,11 @@ main h2{
 }
 .btn-secondary:hover{
     background-color: #FFDDB7;
-    color: #fff;
+    color: #000;
     scale: 1.02;
+    cursor: pointer;
 }
-button a{
+a{
     text-decoration: none;
     color: #000;
 }
@@ -300,7 +302,7 @@ footer p{
         transform: translateY(0);
     }
 }
-.animate > * {
+.animate > *{
     opacity: 0;
     animation: fadeInUp 0.5s ease forwards;
 }
@@ -368,7 +370,7 @@ section .animate{
     transition-delay: 0.4s;
 }
 
-/* "contact section" slide animation */
+/* "contact section" slide animation initial state */
 .sec-4 .animate {
     transform: translateX(-100%);
     opacity: 0;
@@ -393,6 +395,18 @@ section .animate{
 
 
 /* media query for large mobile devices */
+@media only screen and (max-width: 916px) {
+
+    #about-section{
+        margin-top: 208px;
+    }
+    .nav-links {
+        font-size: 18px;
+        padding-right: 0;
+    }
+}
+
+
 
 @media only screen and (max-width: 768px) {
     body {
@@ -406,6 +420,7 @@ section .animate{
         padding: 0 12px;
     }
     .nav-links li {
+        font-size: 16px;
         padding: 0px 10px;
     }
     main {
@@ -472,6 +487,25 @@ section .animate{
     }
 }
 
+/* Hamburger Menu below here */
+@media only screen and (max-width: 690px){
+    .nav-links{
+        display: none;
+    }
+
+    #about-section h2{
+        font-size: 40px;
+    }
+
+    #about-section img{
+        height: auto;
+    }
+}
+
+
+
+
+
 /* media query for extra small devices */
 @media only screen and (max-width: 480px) {
     body {
@@ -480,12 +514,14 @@ section .animate{
 
     main h1 {
         font-size: 40px;
-        margin-top: 80px;
     }
 
     main h2 {
         font-size: 18px;
         margin-top: 12px;
+    }
+    main img{
+        width: 100%;
     }
 
     .btn-primary,

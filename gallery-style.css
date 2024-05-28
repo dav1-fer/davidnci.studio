@@ -192,14 +192,19 @@ figure.show-animate{
     }
 
     .projects-slider figure .card {
-        width: 80%;
+        width: calc(80% - 5rem);
+    }
+
+    #top-button{
+        display: none;
     }
 }
 
 /* media query for extra small devices */
 @media only screen and (max-width: 480px) {
     header h4 {
-        font-size: 20px;
+        text-align: right;
+        font-size: 18px;
     }
 
     .projects-slider figure {
@@ -208,5 +213,11 @@ figure.show-animate{
 
     .projects-slider figure .card {
         width: 90%;
+    }
+    .projects-slider figure figcaption{
+        justify-content: space-between;
+    }
+    .projects-slider figure figcaption p{
+        font-size: 0.9rem;
     }
 }

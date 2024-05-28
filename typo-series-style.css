@@ -44,6 +44,10 @@ header button {
     cursor: pointer;
     background-color: #ffffff;
 }
+header button:hover{
+    background-color: #FFDDB7;
+}
+
 .nav-line{
     width: 350px;
     height: 1px;
